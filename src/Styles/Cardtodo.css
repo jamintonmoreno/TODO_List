@@ -1,0 +1,51 @@
+.todo-card{
+    box-sizing: border-box;
+    width: 35%;
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    height: 200px;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 3px rgb(0,0,0,0.3);
+}
+
+.todo-title {
+    font-size: 1 rem;
+}
+
+.todo-action {
+    width: 30%;
+    text-align: right;
+    position: absolute;
+    right: 1;
+    bottom: 0;
+    margin: 0px 0px 3px 0px;
+}
+
+.todo-action .Complete{
+    font-size: 1.1rem;
+    color: black;
+    background-color: #B7E778;
+    opacity: 0.95;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.todo-action .Uncomplete{
+    font-size: 1.1rem;
+    color: black;
+    background-color: #F38BA0;
+    opacity: 0.95;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}

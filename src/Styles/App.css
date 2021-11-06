@@ -1,0 +1,62 @@
+.todo-conteiner {
+  /* background-color: #FBF4E9; */
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.butons {
+  display: flex;
+  justify-content: center;
+  padding: 15px 15px;  
+}
+
+.filtro1 {
+  background-color:#4b9797;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer; 
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgb(0,0,0,0.3);
+}
+
+.button {
+  display: inline-flex;
+  position: relative;
+  
+}
+
+.bubble-alert {
+  position: relative;
+  right: 12px;
+  top: 10;
+}
+
+.filtro2 {
+  background-color: #B7E778;
+  opacity: 0.95;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgb(0,0,0,0.3);
+}
+
+.filtro3 {
+  background-color: #F38BA0;
+  opacity: 0.90;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgb(0,0,0,0.3);
+}
