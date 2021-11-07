@@ -69,7 +69,7 @@ const App = () => {
   const filterCompleted = () => {
     setArrayTask("Completadas");
     setCopyDataApi(
-      dataApi.filter((taskcomplet, index) => taskcomplet.completed)
+      dataApi.filter((taskcomplet) => taskcomplet.completed)
     );
   };
 
@@ -87,7 +87,8 @@ const App = () => {
     } else if (arrayTask === "Incompletas") {
       filterUnCompleted();
     }
-  }, [dataApi]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[dataApi] );
 
   // Contador de las tareas segun su estado
   const cantidad = dataApi.reduce((acc, el) => acc + el.completed, 0)
@@ -134,14 +135,14 @@ const App = () => {
 
       <div className="todo-conteiner">
         {copyDataApi ? (
-          copyDataApi?.map((singletodo, index) => (
+          copyDataApi?.map((singletodo) => (
             <Cardtodo
               key={singletodo.id}
               title={singletodo.title}
               status={singletodo.completed}
               handleCompleteTodo={handleCompleteTodo}
               id={singletodo.id}
-              index={index}
+              
             />
           ))
         ) : (
